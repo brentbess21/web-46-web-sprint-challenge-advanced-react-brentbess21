@@ -20,8 +20,10 @@ export default class PlantList extends Component {
           ...this.plants,
           plants: res.data
         })
-        
-      });
+      })
+      .catch(err => {
+        console.log(err);
+      })
   }
 
   /*********  DON'T CHANGE ANYTHING IN THE RENDER FUNCTION *********/
